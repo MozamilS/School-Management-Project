@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StudentsController">
+   <children>
+      <TableView fx:id="studentsTable" layoutX="169.0" layoutY="94.0" prefHeight="212.0" prefWidth="388.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="45.0" text="ID" />
+            <TableColumn fx:id="colUsername" prefWidth="88.0" text="Username" />
+            <TableColumn fx:id="colFirstName" prefWidth="92.0" text="First Name" />
+            <TableColumn fx:id="colLastName" prefWidth="87.0" text="Last Name" />
+            <TableColumn fx:id="colLevel" prefWidth="74.0" text="Level" />
+         </columns>
+      </TableView>
+      <TextField fx:id="Search" layoutX="23.0" layoutY="113.0" prefHeight="27.0" prefWidth="135.0" promptText="Username" />
+      <Button layoutX="39.0" layoutY="156.0" mnemonicParsing="false" onAction="#SearchButtonAction" prefHeight="27.0" prefWidth="91.0" text="Search" />
+      <Button layoutX="39.0" layoutY="231.0" mnemonicParsing="false" onAction="#BackButtonAction" prefHeight="27.0" prefWidth="91.0" text="Dashboard" />
+      <Button layoutX="39.0" layoutY="194.0" mnemonicParsing="false" onAction="#RefreshListButtonAction" text="Refresh List" />
+      <Label layoutX="57.0" layoutY="32.0" text="Students">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

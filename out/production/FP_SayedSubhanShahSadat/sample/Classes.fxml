@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ClassesController">
+   <children>
+      <TableView fx:id="classesTable" layoutX="164.0" layoutY="76.0" onMouseClicked="#TableClickedAction" prefHeight="199.0" prefWidth="406.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="45.0" text="ID" />
+          <TableColumn fx:id="colClassCode" prefWidth="84.0" text="Class Code" />
+            <TableColumn fx:id="colClassName" prefWidth="107.0" text="Class Name" />
+            <TableColumn fx:id="colCapacity" prefWidth="76.0" text="Capacity" />
+            <TableColumn fx:id="colSeatsLeft" prefWidth="89.0" text="Seats Left" />
+        </columns>
+      </TableView>
+      <Button layoutX="36.0" layoutY="360.0" mnemonicParsing="false" onAction="#AddButtonAction" prefHeight="17.0" prefWidth="67.0" text="Add" />
+      <Button layoutX="176.0" layoutY="360.0" mnemonicParsing="false" onAction="#RemoveButtonAction" text="Remove" />
+      <Button layoutX="312.0" layoutY="360.0" mnemonicParsing="false" onAction="#UpdateButtonAction" text="Update" />
+      <Button layoutX="44.0" layoutY="139.0" mnemonicParsing="false" onAction="#SearchButtonAction" prefHeight="26.0" prefWidth="91.0" text="Search" />
+      <TextField fx:id="Search" layoutX="34.0" layoutY="85.0" prefHeight="26.0" prefWidth="110.0" promptText="Class Code" />
+      <Button layoutX="44.0" layoutY="176.0" mnemonicParsing="false" onAction="#BackButtonAction" prefHeight="26.0" prefWidth="91.0" text="Dashboard" />
+      <Button layoutX="456.0" layoutY="360.0" mnemonicParsing="false" onAction="#RefreshButtonAction" text="Refresh List" />
+      <TextField fx:id="UpdateCode" layoutX="36.0" layoutY="315.0" prefHeight="26.0" prefWidth="110.0" promptText="Code" />
+      <TextField fx:id="UpdateName" layoutX="176.0" layoutY="315.0" prefHeight="26.0" prefWidth="110.0" promptText="Name" />
+      <TextField fx:id="UpdateCapacity" layoutX="312.0" layoutY="315.0" prefHeight="26.0" prefWidth="110.0" promptText="Capacity" />
+      <TextField fx:id="UpdateSeatsTaken" layoutX="456.0" layoutY="315.0" prefHeight="26.0" prefWidth="110.0" promptText="Seats taken" />
+      <Label layoutX="36.0" layoutY="289.0" text="Update/Add Class:" />
+      <Label layoutX="46.0" layoutY="26.0" text="Manage classes">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
